@@ -1,10 +1,13 @@
+import multimedia from '../pages/multimedia.vue'
 
 const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: () => import('pages/Index.vue') },
+      { path: '/dados', component: () => import('pages/dataOpen.vue') },
+      { path: '/videos', component: multimedia  }
     ]
   }
 ]

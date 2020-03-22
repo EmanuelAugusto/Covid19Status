@@ -58,11 +58,29 @@ export default {
     return {
       leftDrawerOpen: false,
       essentialLinks: [
+         {
+          title: 'Home',
+          caption: 'Painel Global',
+          icon: 'language',
+          link: '/'
+        },
         {
           title: 'Ministério da Saúde',
           caption: 'Dicas de prevenção',
-          icon: 'school',
+          icon: 'account_balance',
           link: 'https://coronavirus.saude.gov.br/'
+        },
+        {
+          title: 'Dados do Brasil',
+          caption: 'Mais detalhes sobre a expansão do Covid-19 no Brasil',
+          icon: 'timeline',
+          link: '/#/dados'
+        },
+         {
+          title: 'Vídeos',
+          caption: 'Vídeos explicativos',
+          icon: 'timeline',
+          link: '/#/videos'
         }
       ]
     }
