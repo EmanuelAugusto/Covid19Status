@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
-    "start": "npm start"
+    "start": "node index.js"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
