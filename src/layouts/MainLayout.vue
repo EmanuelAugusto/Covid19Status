@@ -77,9 +77,9 @@ export default {
           link: '/#/dados'
         },
          {
-          title: 'Vídeos',
+          title: 'Corona Vírus TV',
           caption: 'Vídeos explicativos',
-          icon: 'timeline',
+          icon: 'live_tv',
           link: '/#/videos'
         }
       ]

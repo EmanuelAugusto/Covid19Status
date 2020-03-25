@@ -68,12 +68,18 @@ export default {
       .then((response) => {
         this.info = response.data.data.covid19Stats
         this.backup = response.data.data.covid19Stats
-
+        console.log(response.data)
 
         let dataAtt = response.data.data.lastChecked.split("-")
         let dataAtt2= dataAtt[2].split("T");
 
         this.lastUpdate = dataAtt2[0]+"/"+dataAtt[1]+"/"+dataAtt[0]
+
+        this.$q.notify({
+           type: 'warning',
+           message: `Versão Beta`,
+           position: 'top',
+        })
 
       })
       .catch(() => {
